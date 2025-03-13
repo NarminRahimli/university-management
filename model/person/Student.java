@@ -54,11 +54,7 @@ public class Student extends Person {
         return false;
     }
 
-    // Can be moved to StudentService.java
-    public boolean withdrawFromCourse(int courseId) {
-        return courses.removeIf(course -> course.getCourseCode() == courseId);
-    }
-
+   
     public double getCGPA() {
         double sum = 0;
         for (double GPA : this.GPAs) { sum += GPA; }

@@ -8,7 +8,7 @@ import model.School;
 import util.Enums.FacultyType;
 import java.time.LocalDate;
 
-public class Faculty extends Person {
+public class Faculty extends Person implements Employee {
     private School school;
     private Department department;
     private FacultyType position;
